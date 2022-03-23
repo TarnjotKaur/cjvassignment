@@ -19,3 +19,5 @@ const HomePage = (props) => {
 }
 
 export default HomePage
+
+// Home Page
