@@ -17,9 +17,9 @@ const PropertyTypeList = (props) => {
         <div>
           <div >
           <Row>
-              <Col>
+            <Col>
             <div className='grid grid-gap-1 grid-row-gap-2 grid-col-5'>
-            {props.propertyType.map((propertyType)=>(<PropertyTypeItem key={propertyType.id} id={propertyType.id} typeName={propertyType.typeName} img={propertyType.img}/>))}
+            {props.propertyType.map((propertyType)=>(<PropertyTypeItem key={propertyType.id} id={propertyType.id} typeName={propertyType.typeName} img={propertyType.imgPath}/>))}
             </div>
             </Col>
             </Row>

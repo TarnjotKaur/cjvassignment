@@ -10,7 +10,7 @@ const PropertyTypePage = (props) => {
 
   const params = useParams();
 
-  const propType = params.type;
+  const propType = params.typeName;
 
   return (
     <div className="container">

@@ -35,7 +35,7 @@ const Header = () => {
               </Form>
             
               <Nav>
-              <Nav.Link> <Link to="/properties"><div id="vacprop">Vacation Properties</div></Link></Nav.Link>
+              <Nav.Link> <Link to="/Property"><div id="vacprop">Vacation Properties</div></Link></Nav.Link>
               
               <NavDropdown img={GiHamburgerMenu} id="collasible-nav-dropdown">
                <NavDropdown.Item><div id="dropdown"><Link to="/signup">Sign Up</Link></div></NavDropdown.Item>

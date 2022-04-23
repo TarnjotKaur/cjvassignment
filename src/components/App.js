@@ -17,11 +17,14 @@ import PropertyDescPage from "../pages/PropertyDescPage";
 import PropertyTypePage from "../pages/PropertyTypePage"
 import PropertyListingPage from "../pages/PropertyListingPage";
 
+
+
 const App = () => {
  
 
 useEffect(()=>{
-    fetch('http://localhost:5000/properties')   
+    const url = "mongodb+srv://tarnjotkaur:M0ng0db123@cluster0.lzrlb.mongodb.net/CJVRestInn?retryWrites=true&w=majority"
+    fetch('http://localhost:8081/Property')   
     .then(response=>response.json())          
     .then(json=>{                                   
       setProperties(json);                                   
@@ -30,7 +33,7 @@ useEffect(()=>{
     })  
 
 
-    fetch('http://localhost:5000/propertyType')   
+    fetch('http://localhost:8081/PropertyType')   
     .then(response=>response.json())          
     .then(json=>{                                   
       setPropertyType(json);                                   
@@ -39,6 +42,14 @@ useEffect(()=>{
     })  
     
     
+    // PropertyService.getProperty()
+    // .then(response=>{
+    //   setProperties(response.data);
+    // }).catch(err=>{
+    //   console.log(`Error ${err}`);
+    // }) 
+
+
   
 },[]);
 
@@ -47,21 +58,20 @@ const [properties , setProperties] = useState([{
       id: 0, 
       title: "", 
       price: "",
-      img:null,
+      imgPath:"",
       type:"",
       location:"",
       bestseller:false,
-      desc:"",
-      rules:"",
-      amenties:"" 
+      description:"",
+      rules:[],
+      amenties:[]
 }])
 
 const [propertyType , setPropertyType] = useState([{
   id:0,
   typeName:"",
-  img:null
+  imgPath:null
 }]) 
-
 
 
 
@@ -75,9 +85,9 @@ const [propertyType , setPropertyType] = useState([{
   <Route path="/" element={<HomePage propertyType={propertyType} properties={properties} />} />
   <Route path="login" element={<LoginPage />} />
   <Route path="signup" element={<SignUpPage />} />
-  <Route path="properties" element={<PropertyListingPage properties={properties}/>} />
-  <Route path="propertyType/:type" element={<PropertyTypePage properties={properties} />} />
-  <Route path="property/:title" element={<PropertyDescPage properties={properties} />} />
+  <Route path="Property" element={<PropertyListingPage properties={properties}/>} />
+  <Route path="Property/Type/:typeName" element={<PropertyTypePage properties={properties} />} />
+  <Route path="Property/:title" element={<PropertyDescPage properties={properties} />} />
 
 
 </Routes>

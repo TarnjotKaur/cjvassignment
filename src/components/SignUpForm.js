@@ -1,134 +1,161 @@
-import React from 'react'
+
 
 import {Container, Form} from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 
-import { useState } from 'react'
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const SignUpForm = () => {
-
-
-
-
-  const [email, setEmail] = useState("");         
-  const [pass, setPass] = useState("");   
-  const [firstName, setFirstName] = useState("");         
-  const [lastName, setLastName] = useState(""); 
-  const [errorEmail, setErrorEmail] = useState("");         
-  const [errorPass, setErrorPass] = useState("");   
-  const [errorFirstName, setErrorFirstName] = useState("");         
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [emailID, setemailID] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorFirstName, setErrorFirstName] = useState("");
   const [errorLastName, setErrorLastName] = useState("");
+  const [errorEmailID, setErrorEmailID] = useState("");
+  const [errorPassword, setErrorPassword] = useState("");
+  const navigate = useNavigate();
 
+  const signUp = () => {
+    const customerData = { firstName, lastName, emailID, password };
+  
+    fetch("http://localhost:8081/Customers", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(customerData),
+    }).then(() => {
+      console.log("Added new customer.");
+      navigate("/login");
+    });
+  };
 
-  const validateForm = (props)=>{      
-
-
+  const validateForm = () => {
     let isValidated = true;
-
-    if(email==="")
-    {
-      setErrorEmail("Email ID cannot be blank!")
-        isValidated = false;
-    }
-    else
-    {
-      setErrorEmail("");
-    }
-
-
-    if(pass === "")
-    {
-      setErrorPass("Password cannot be blank")
-        isValidated = false;
-    }
-    else{
-      setErrorPass("");
-    }
-
-    if(firstName==="")
-    {
-      setErrorFirstName("First Name cannot be blank!")
-        isValidated = false;
-    }
-    else
-    {
+    if (firstName === "") {
+      setErrorFirstName("You must enter your First Name");
+      isValidated = false;
+    } else {
       setErrorFirstName("");
     }
 
-
-    if(lastName === "")
-    {
-      setErrorLastName("Last Name cannot be blank")
-        isValidated = false;
-    }
-    else{
+    if (lastName === "") {
+      setErrorLastName("You must enter your Last Name");
+      isValidated = false;
+    } else {
       setErrorLastName("");
     }
 
+    if (emailID === "") {
+      setErrorEmailID("You must enter a valid email");
+      isValidated = false;
+    } else {
+      setErrorEmailID("");
+    }
+
+    if (password === "") {
+      setErrorPassword("You must enter the password");
+      isValidated = false;
+    } else {
+      setErrorPassword("");
+    }
     return isValidated;
-}
-
-
-
-
-
+  };
 
   return (
     <div>
-      <br/><br/>
-      <Container>
-        <Form>
-          <h3> Create a Account </h3>
-          <hr/>
       
-        <Form.Group className="mb-3" controlId="signUpEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-        We'll never share your email with anyone else.
-        </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="signUpPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-        <Form.Text className="text-muted">
-        6 to 20 letters with atleast 1 number
-        </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="signUpFirstName">
-        <Form.Label>First Name</Form.Label>
-        <Form.Control type="text" placeholder="First Name" />
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="signUpLastName">
-        <Form.Label>Last Name</Form.Label>
-        <Form.Control type="text" placeholder="Last Name" />
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="keepmesignedin">
-        <Form.Check type="checkbox" label="Keep me signed in" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="coupons">
-        <Form.Check type="checkbox" label="Email me exclusive coupons, deals and travel information from Rest Inn" /> 
-        </Form.Group>
-        
-        <Form.Label>By signing up you accept the Terms and Conditions and Privacy Statement.</Form.Label>
-        <br/><br/>
-        <Button variant="primary" type="submit" onClick={()=>{
-          if(!validateForm())
-          {
-              alert("Validation Failed")
-          }
-        }}>
-        Create account
-        </Button>
-        </Form>
-        </Container>
-        <br/><br/>
+      <div className="form-container">
+        <div className="app-wrapper">
+          <div>
+            <br/>
+            <h3 className="title"> <h3> Create a Account </h3></h3>
+          </div>
+          <hr/>
+          <form className="form-wrapper">
+            <div className="name">
+            <Form.Label>First Name</Form.Label>
+              <br/>
+              <input
+                className="input"
+                type="text"
+                name="firstName"
+                value={firstName}
+                onChange={(event) => {
+                  setFirstName(event.target.value);
+                }}
+              />
+              <span className="error">{errorFirstName}</span>
+            </div>
+         <br/>
+            <div className="name">
+            <Form.Label>Last Name</Form.Label>
+              <br/>
+              <input
+                className="input"
+                type="text"
+                name="lastName"
+                value={lastName}
+                onChange={(event) => {
+                  setLastName(event.target.value);
+                }}
+              />
+              <span className="error">{errorLastName}</span>
+            </div>
+          <br/>
+            <div className="email">
+            <Form.Label>Email address</Form.Label>
+              <br/>
+              <input
+                className="input"
+                type="email"
+                name="email"
+                value={emailID}
+                onChange={(event) => {
+                  setemailID(event.target.value);
+                }}
+              />
+              <span className="error">{errorEmailID}</span>
+            </div>
+       <br/>
+            <div className="password">
+            <Form.Label>Password</Form.Label>
+              <br/>
+              <input
+                className="input"
+                type="password"
+                name="password"
+                value={password}
+                onChange={(event) => {
+                  setPassword(event.target.value);
+                }}
+              />
+              <span className="error">{errorPassword}</span>
+            </div>
+            <hr/><br/>
+            <div>
+              <Button variant="primary"  type="submit"
+                className="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (validateForm()) {
+                    signUp();
+                  } else {
+                    alert("There are errors: Please fill all the fields");
+                  }
+                }}
+              >
+                Register
+                </Button>
+              <br/><br/>
+            </div>
+          </form>
+        </div>
+      </div>
+     
     </div>
-  )
-}
+  );
+};
 
-export default SignUpForm
+export default SignUpForm;

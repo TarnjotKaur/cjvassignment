@@ -9,7 +9,7 @@
         "type":"Resorts",
         "location":"Cusco, Peru",
         "bestseller":true,
-        "desc":"Tambo del Arriero is a great Boutique Hotel in Cusco, Peru. It was designed to accommodate a reduced number of guestrooms taking care of the original architecture and spirit of the original house and, at the same time, satisfying the needs of the most demanding contemporary traveler. Therefore, we offer a private, warm and homely atmosphere; but at the same time, highly professional in order to guarantee a delightful and unforgettable stay enjoying the colonial architecture of Cusco together with modern comforts. ",
+        "description":"Tambo del Arriero is a great Boutique Hotel in Cusco, Peru. It was designed to accommodate a reduced number of guestrooms taking care of the original architecture and spirit of the original house and, at the same time, satisfying the needs of the most demanding contemporary traveler. Therefore, we offer a private, warm and homely atmosphere; but at the same time, highly professional in order to guarantee a delightful and unforgettable stay enjoying the colonial architecture of Cusco together with modern comforts. ",
         "rules":"Face masks required for guests in public areas.",
         "amenities": "Free High Speed Internet (WiFi), Free breakfast, Concierge, Housekeeping"
     },
@@ -21,7 +21,7 @@
         "type":"Beach House",
         "location":"Orlando, Florida",
         "bestseller":true,
-        "desc":"Diamond Resorts Grand Beach is an excellent choice for travellers visiting Orlando, offering a family-friendly environment alongside many helpful amenities designed to enhance your stay. For those interested in checking out popular landmarks while visiting Orlando, Embassy Grand Beach is located a short distance from Characters in Flight (2.3 km) and Basilica of the National Shrine of Mary, Queen of the Universe (2.5 km).",
+        "description":"Diamond Resorts Grand Beach is an excellent choice for travellers visiting Orlando, offering a family-friendly environment alongside many helpful amenities designed to enhance your stay. For those interested in checking out popular landmarks while visiting Orlando, Embassy Grand Beach is located a short distance from Characters in Flight (2.3 km) and Basilica of the National Shrine of Mary, Queen of the Universe (2.5 km).",
         "rules":"We are closely following recommendations from the Centers for Disease Control and Prevention (CDC) and World Health Organization (WHO), and are taking precautions to protect the health and well-being of everyone at our resorts.",
         "amenities":"Suites, Wifi, Private balcony, Pool, Fitness Centre with Gym / Workout Room"
     },
@@ -33,7 +33,7 @@
         "type":"Apartments",
         "location":"Banff, Alberta",
         "bestseller":false,
-        "desc":"Enjoy a panoramic view, plentiful sunshine, and natural setting within vintage modernist architecture. Located along the wildlife corridor, the mountains rise straight up from our back door and downtown Banff is only minutes away. The hotel's woodland setting and striking views of three iconic mountain ranges provides a National Park atmosphere. Experience handcrafted cuisine using the finest and freshest ingredients in the Bistro & Lounge! Relax in our outdoor hot tub or next to our fire pits.",
+        "description":"Enjoy a panoramic view, plentiful sunshine, and natural setting within vintage modernist architecture. Located along the wildlife corridor, the mountains rise straight up from our back door and downtown Banff is only minutes away. The hotel's woodland setting and striking views of three iconic mountain ranges provides a National Park atmosphere. Experience handcrafted cuisine using the finest and freshest ingredients in the Bistro & Lounge! Relax in our outdoor hot tub or next to our fire pits.",
         "rules":"Travel with confidence & learn about our enhanced health, hygiene and physical distancing procedures, plus enjoy flexible change and cancellation policies on all bookings. ",
         "amenities":"Suites, Wifi, Private balcony, Pool, Fitness Centre with Gym / Workout Room"
     },
@@ -45,7 +45,7 @@
         "type":"Resorts",
         "location":"Taormina, Sicily Italy",
         "bestseller":false,
-        "desc":"Mazzarò Sea Palace is located on the magnificent bay from which it takes its name, Baia di Mazzarò, one of the most famous beaches in Taormina. A location that boasts an exceptional panorama where the gaze is filled with infinite natural beauty. At Mazzarò Sea Palace you will be transported to a world made of colours, scents, and history. An exclusive retreat where sun, crystal-clear sea, and exclusive experiences await you.",
+        "description":"Mazzarò Sea Palace is located on the magnificent bay from which it takes its name, Baia di Mazzarò, one of the most famous beaches in Taormina. A location that boasts an exceptional panorama where the gaze is filled with infinite natural beauty. At Mazzarò Sea Palace you will be transported to a world made of colours, scents, and history. An exclusive retreat where sun, crystal-clear sea, and exclusive experiences await you.",
         "rules":"rule 1 - no dogs",
         "amenities":"Paid private parking on-site, Wifi, Bar / lounge, Private beach, Fitness Centre with Gym / Workout Room"
     },
@@ -57,7 +57,7 @@
         "type":"Hotels",
         "location":"Kochi, India",
         "bestseller":true,
-        "desc":"The Tru Blu Experience A Beacon of modern style and sophistication in the heart of Kochi Radisson Blu Kochi is one of the best upper upscale hotels in the city. Situated in the City Centre, the hotel lies in close proximity to the transportation hubs, leisure destinations and great shopping areas. The central location of the hotel appeals to both business and leisure travelers. The excellence of the hotel is reflected in its chic interiors, combined with a unique service culture, and an unforgettable ambience that makes one want to book a return stay even before one has left Kochi.",
+        "description":"The Tru Blu Experience A Beacon of modern style and sophistication in the heart of Kochi Radisson Blu Kochi is one of the best upper upscale hotels in the city. Situated in the City Centre, the hotel lies in close proximity to the transportation hubs, leisure destinations and great shopping areas. The central location of the hotel appeals to both business and leisure travelers. The excellence of the hotel is reflected in its chic interiors, combined with a unique service culture, and an unforgettable ambience that makes one want to book a return stay even before one has left Kochi.",
         "rules":"Face masks required for guests in public areas",
         "amenities":"Airport transportation, Wifi, Kids stay free, Housekeeping, Fitness Centre with Gym / Workout Room"
         },
@@ -69,7 +69,7 @@
         "type":"A Bed and Breakfast",
         "location":"Seattle, WA",
         "bestseller":false,
-        "desc":"The Ballard Inn is a newly remodeled, vintage, boutique hotel, located in the heart of Ballard. Accommodations showcase vintage decor combined with old world charm. Completely renovated and restored to its 1902 elegance, Ballard Inn features 16 intimate rooms with 21st century amenities. Built in 1902, the building was originally commissioned and occupied by the American-Scandinavian Bank. And, later converted to a hotel, which served the city of Ballard and the neighboring communities of Magnolia, Fremont, and Wallingford for over 100 years. ",
+        "description":"The Ballard Inn is a newly remodeled, vintage, boutique hotel, located in the heart of Ballard. Accommodations showcase vintage decor combined with old world charm. Completely renovated and restored to its 1902 elegance, Ballard Inn features 16 intimate rooms with 21st century amenities. Built in 1902, the building was originally commissioned and occupied by the American-Scandinavian Bank. And, later converted to a hotel, which served the city of Ballard and the neighboring communities of Magnolia, Fremont, and Wallingford for over 100 years. ",
         "rules":"Non-smoking rooms",
         "amenities":"Baggage storage, Free High Speed Internet (WiFi), Parking, Housekeeping, Fitness Centre with Gym / Workout Room"
     },
@@ -81,7 +81,7 @@
         "type":"Beach House",
         "location":"Pompano Beach, Florida",
         "bestseller":false,
-        "desc":"Harbor Resort & Marina is the complete Florida resort. It includes 3 popular restaurants each with full bars and a full-service marina with fishing charters, snorkel & scuba diving trips, small boat and jet ski rentals plus boat trips that tour the historic Hillsboro Lighthouse. Our Rooms are Spacious with private balcony overlooking the Marina. Take advantage and book our fully remodeled rooms. ",
+        "description":"Harbor Resort & Marina is the complete Florida resort. It includes 3 popular restaurants each with full bars and a full-service marina with fishing charters, snorkel & scuba diving trips, small boat and jet ski rentals plus boat trips that tour the historic Hillsboro Lighthouse. Our Rooms are Spacious with private balcony overlooking the Marina. Take advantage and book our fully remodeled rooms. ",
         "rules":"Face masks required for guests in public areas",
         "amenities":"Free breakfast, Free High Speed Internet (WiFi), Boating, Yoga classes, Pool"
     },
@@ -93,7 +93,7 @@
         "type":"Apartments",
         "location":"Vancouver, Canada",
         "bestseller":false,
-        "desc":"Stay in the heart of Vancouver. This property is a 15-minute walk from the beach. This Vancouver hotel is less than 5 minutes’ walk from Robson Street. All suites offer full kitchens and free WiFi. Stanley Park is only 4 minutes' drive away.",
+        "description":"Stay in the heart of Vancouver. This property is a 15-minute walk from the beach. This Vancouver hotel is less than 5 minutes’ walk from Robson Street. All suites offer full kitchens and free WiFi. Stanley Park is only 4 minutes' drive away.",
         "rules":"Face masks required for guests in public areas",
         "amenities":"Free breakfast, Free High Speed Internet (WiFi), 24-hour front desk, Laundry, Tea/Coffee Maker in All Rooms"
     }

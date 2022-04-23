@@ -12,9 +12,9 @@ const PropertyItem = (props) => {
             <Container i>
             <div className="itemImg">
               <Card border="dark" style={{ width: '16rem' , height: '300px'}}>
-            <Link to= {`/property/${props.title}`} >
+            <Link to= {`/Property/${props.title}`} >
              
-              <Card.Img variant="top" src={props.img} style={{  height: '190px'}}/>
+              <Card.Img variant="top" src={props.imgPath} style={{  height: '190px'}}/>
               </Link>
               <Card.Body>
               <Card.Title>{props.title}</Card.Title>

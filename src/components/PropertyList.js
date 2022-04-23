@@ -18,7 +18,7 @@ const PropertyList = (props) => {
     <div className="container">
       <div className="row">
       <div  className='grid grid-gap-1 grid-row-gap-2 grid-col-5'>
-       {props.properties.map((properties)=>{ return properties.bestseller===true ?<PropertyItem title={properties.title} img={properties.img} price={properties.price}/>:""})} 
+       {props.properties.map((properties)=>{ return properties.bestseller===true ?<PropertyItem title={properties.title} imgPath={properties.imgPath} price={properties.price}/>:""})} 
        </div>
       </div>
     </div>
@@ -39,7 +39,7 @@ const PropertyList = (props) => {
     <div className="container">
       <div className="row">
       <div  className='grid grid-gap-1 grid-row-gap-2 grid-col-4'>
-      {props.properties.map((properties)=>{ return properties.type===props.propertyTypeTitle ?<PropertyItem title={properties.title} img={properties.img} price={properties.price}/>:""})} 
+      {props.properties.map((properties)=>{ return properties.type===props.propertyTypeTitle ?<PropertyItem title={properties.title} imgPath={properties.imgPath} price={properties.price}/>:""})} 
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ const PropertyList = (props) => {
       <div className="container">
         <div className="row">
         <div  className='grid grid-gap-1 grid-row-gap-2 grid-col-4'>
-        {props.properties.map((properties)=>{ return <PropertyItem title={properties.title} img={properties.img} price={properties.price}/>})} 
+        {props.properties.map((properties)=>{ return <PropertyItem title={properties.title} imgPath={properties.imgPath} price={properties.price}/>})} 
           </div>
         </div>
       </div>

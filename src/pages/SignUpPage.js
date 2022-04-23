@@ -17,3 +17,5 @@ const SignUpPage = () => {
 }
 
 export default SignUpPage
+
+// Sign up page

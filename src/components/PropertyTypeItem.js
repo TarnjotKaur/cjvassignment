@@ -12,7 +12,7 @@ const PropertyTypeItem = (props) => {
             <Container>
               
               <Card border="dark" style={{ width: '16rem', height: '230px'}}>
-              <Link to = {`/propertyType/${props.typeName}`}> 
+              <Link to = {`/Property/Type/${props.typeName}`}> 
               <Card.Img variant="top" src={props.img} style={{  height: '180px'}} />
               </Link>
               <Card.Body>

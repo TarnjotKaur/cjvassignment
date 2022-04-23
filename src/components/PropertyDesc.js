@@ -18,13 +18,13 @@ const PropertyDesc = (props) => {
       <br/> 
 
       <Card >
-  <Card.Img variant="top" src={p[0].img} />
+  <Card.Img variant="top" src={p[0].imgPath} />
   <Card.Body>
   {p[0].bestseller===true? <Badge bg="success">BestSeller</Badge> : ""}
     <Card.Title><h1>{p[0].title}</h1>
     </Card.Title>
     <Card.Text>
-      {p[0].desc}
+      {p[0].description}
     </Card.Text>
   </Card.Body>
   <ListGroup className="list-group-flush">
